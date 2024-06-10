@@ -28,6 +28,12 @@
   continue - list = <UNDERSCORE MINUS>;
 };
 
+#if defined(NICE_VIEW_SPI)
+&nice_view_spi {
+  cs - gpios = <NICE_VIEW_SPI>;
+};
+#endif
+
 /
 {
   keymap {
