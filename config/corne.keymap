@@ -5,8 +5,8 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "./mouse.dtsi"
-#include "./shift_functions.dtsi"
+#include "mouse.dtsi"
+#include "shift_functions.dtsi"
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
