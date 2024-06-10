@@ -5,13 +5,13 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "mouse.dtsi"
-#include "shift_functions.dtsi"
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
+
+#include "mouse.dtsi"
+#include "shift_functions.dtsi"
 
 #define LHRM(k1, k2, k3, k4) &lhmr LGUI k1 &lhmr LALT k2 &lhmr LCTRL k3 &lhmr LSHIFT k4
 #define RHRM(k1, k2, k3, k4) &rhmr RGUI k4 &rhmr RALT k3 &rhmr RCTRL k2 &rhmr RSHIFT k1
