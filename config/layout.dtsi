@@ -128,7 +128,7 @@
       //                       ╰────────────────┴─────────────┴─────────────╯       ╰─────────────┴─────────────┴─────────────╯
       bindings = <&none &none &none &none &none &none &none &none &none &none &none &none
 
-                  &none LHRM(&none, &none, &none, &none) &none &kp U_MS_L &kp U_MS_D &kp U_MS_U &kp U_MS_R &none &none
+                  &none LHRM(&none, &none, &none, &none) &none U_MS_L U_MS_D U_MS_U U_MS_R &none &none
 
                   &none &none &none &none &none &none &kp HOME &kp PG_DN &kp PG_UP &kp END &kp BSPC &none
 
