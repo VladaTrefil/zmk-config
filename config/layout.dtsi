@@ -146,13 +146,7 @@
       // ╰──────────┴──────────┼──────────┴─────┬────┴────────┬──┴──────────┤       ├──────────┴──┬────────┴────┬─────┴───────┬──┴──────────┴──────────╯
       //                       │  .             │  0          │  -          │       │             │             │             │
       //                       ╰────────────────┴─────────────┴─────────────╯       ╰─────────────┴─────────────┴─────────────╯
-      bindings = <&none &kp LBKT &kp N7 &kp N8 &kp N9 &kp RBKT &none &none &none none &none &none
-
-                  &none &kp SEMI &kp N4 &kp N5 &kp N6 &kp KP_EQUAL &none RHRM(&none, &none, &none, &none) &none
-
-                  &none &kp GRAVE &kp N1 &kp N2 &kp N3 &kp BSLH &none &none &none &none &none &none
-
-                  &kp DOT &kp N0 &kp MINUS &none &none &none>;
+      bindings = <&none &kp LBKT &kp N7 &kp N8 &kp N9 &kp RBKT &none &none &none none &none &none &none &kp SEMI &kp N4 &kp N5 &kp N6 &kp EQUAL &none RHRM(&none, &none, &none, &none) &none &none &kp GRAVE &kp N1 &kp N2 &kp N3 &kp BSLH &none &none &none &none &none &none &kp DOT &kp N0 &kp MINUS &none &none &none>;
     };
 
     symbols {
