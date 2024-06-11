@@ -90,11 +90,11 @@
       //                       ╰────────────────┴─────────────┴─────────────╯       ╰─────────────┴─────────────┴─────────────╯
       bindings = <&none &none &none &none &none &none &kp C_RW &none &none &kp C_FF &none &none
 
-                  &none &none &none &none &none &none &kp K_PREV &kp K_VOL_DOWN &kp K_VOL_UP &kp K_NEXT &none &none
+                  &none LHRM(&none, &none, &none, &none) &none &kp K_PREV &kp C_VOL_DN &kp C_VOL_UP &kp K_NEXT &none &none
 
                   &none &none &none &none &none &none &u_bt_sel_0 &u_bt_sel_1 &u_bt_sel_2 &u_bt_sel_3 &u_bt_sel_4 &u_reset
 
-                  &none &none &none &kp K_STOP &kp K_PP &kp K_MUTE>;
+                  &none &none &none &kp K_STOP &kp K_PP &kp C_MUTE>;
     };
 
     nav {
