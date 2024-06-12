@@ -6,7 +6,6 @@
 / { \
   macros { \
     name: name { \
-      label = U_STRINGIFY(ZM_ ## name); \
       compatible = "zmk,behavior-macro"; \
       #binding-cells = <0>; \
       __VA_ARGS__ \
@@ -19,7 +18,6 @@
       behaviors { \
         NAME: NAME { \
           compatible = "zmk,behavior-mod-morph"; \
-          label = U_STRINGIFY(NAME); \
           #binding-cells = <0>; \
           bindings = <BINDING>, <SHIFT_BINDING>; \
           mods = <(MOD_LSFT|MOD_RSFT)>; \
@@ -38,4 +36,4 @@ SHIFT_MACRO(u_bt_sel_2, &bt BT_SEL 2, &bt BT_SEL 2 &bt BT_CLR)
 SHIFT_MACRO(u_bt_sel_3, &bt BT_SEL 3, &bt BT_SEL 3 &bt BT_CLR)
 SHIFT_MACRO(u_bt_sel_4, &bt BT_SEL 4, &bt BT_SEL 4 &bt BT_CLR)
 
-SHIFT_MACRO(u_reset, &sys_reset, &bootloader)
+// SHIFT_MACRO(u_reset, &sys_reset, &bootloader)
