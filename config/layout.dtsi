@@ -7,7 +7,7 @@
 #include "layout.h"
 
 #include "mouse.dtsi"
-#include "shift_functions.dtsi"
+// #include "shift_functions.dtsi"
 
 #define LHRM(k1, k2, k3, k4) &lhmr LGUI k1 &lhmr LALT k2 &lhmr LCTRL k3 &lhmr LSHIFT k4
 #define RHRM(k1, k2, k3, k4) &rhmr RGUI k4 &rhmr RALT k3 &rhmr RCTRL k2 &rhmr RSHIFT k1
@@ -96,7 +96,7 @@
 
                   &none LHRM(&none, &none, &none, &none) &none &kp K_PREV &kp C_VOL_DN &kp C_VOL_UP &kp K_NEXT &none &none
 
-                  &none &none &none &none &none &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &u_reset
+                  &none &none &none &none &none &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none
 
                   &none &none &none &kp K_STOP &kp K_PP &kp C_MUTE>;
     };
