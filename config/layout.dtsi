@@ -20,6 +20,8 @@
 #define SYM 5
 #define FUNC 6
 
+#define U_TAPPING_TERM 200
+
 // &caps_word {
 //   continue-list = <UNDERSCORE MINUS>;
 // };
