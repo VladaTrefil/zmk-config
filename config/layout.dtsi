@@ -9,8 +9,8 @@
 #include "mouse.dtsi"
 // #include "shift_functions.dtsi"
 
-// #define LHRM(k1, k2, k3, k4) &lhrm LGUI k1 &lhrm LALT k2 &lhrm LCTRL k3 &lhrm LSHIFT k4
-// #define RHRM(k1, k2, k3, k4) &rhrm RGUI k4 &rhrm RALT k3 &rhrm RCTRL k2 &rhrm RSHIFT k1
+#define LHRM(k1, k2, k3, k4) &lhrm LGUI k1 &lhrm LALT k2 &lhrm LCTRL k3 &lhrm LSHIFT k4
+#define RHRM(k1, k2, k3, k4) &rhrm RGUI k4 &rhrm RALT k3 &rhrm RCTRL k2 &rhrm RSHIFT k1
 
 #define BASE 0
 #define MEDIA 1
@@ -69,7 +69,7 @@
 
                   &none &none &none &none &none &none &kp K_PREV &kp C_VOL_DN &kp C_VOL_UP &kp K_NEXT &none &none
 
-                  &none &none &none &none &none &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &u_reset
+                  &none &none &none &none &none &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none
 
                   &none &none &none &kp K_STOP &kp K_PP &kp C_MUTE>;
     };
