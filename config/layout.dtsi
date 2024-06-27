@@ -9,8 +9,8 @@
 #include "mouse.dtsi"
 // #include "shift_functions.dtsi"
 
-#define LHRM(k1, k2, k3, k4) &lhmr LGUI k1 &lhmr LALT k2 &lhmr LCTRL k3 &lhmr LSHIFT k4
-#define RHRM(k1, k2, k3, k4) &rhmr RGUI k4 &rhmr RALT k3 &rhmr RCTRL k2 &rhmr RSHIFT k1
+#define LHRM(k1, k2, k3, k4) &lhrm LGUI k1 &lhrm LALT k2 &lhrm LCTRL k3 &lhrm LSHIFT k4
+#define RHRM(k1, k2, k3, k4) &rhrm RGUI k4 &rhrm RALT k3 &rhrm RCTRL k2 &rhrm RSHIFT k1
 
 #define BASE 0
 #define MEDIA 1
@@ -36,7 +36,7 @@
     compatible = "zmk,keymap";
 
     behaviors {
-      rhmr: rhmr {
+      rhrm: rhrm {
         compatible = "zmk,behavior-hold-tap";
         bindings = <&kp>, <&kp>;
 
@@ -48,7 +48,7 @@
         hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41>;
       };
 
-      lhmr: lhmr {
+      lhrm: lhrm {
         compatible = "zmk,behavior-hold-tap";
         bindings = <&kp>, <&kp>;
 
@@ -92,7 +92,7 @@
       //                       ╰────────────────┴─────────────┴─────────────╯       ╰─────────────┴─────────────┴─────────────╯
       bindings = <&none &none &none &none &none &none &kp C_RW &none &none &kp C_FF &none &none
 
-                  &none LHRM(&none, &none, &none, &none) &none &kp K_PREV &kp C_VOL_DN &kp C_VOL_UP &kp K_NEXT &none &none
+                  &none &none &none &none &none &none &kp K_PREV &kp C_VOL_DN &kp C_VOL_UP &kp K_NEXT &none &none
 
                   &none &none &none &none &none &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &u_reset
 
@@ -111,7 +111,7 @@
       //                       ╰────────────────┴─────────────┴─────────────╯       ╰─────────────┴─────────────┴─────────────╯
       bindings = <&none &none &none &none &none &none &caps_word &none &none &none &none &none
 
-                  &none LHRM(&none, &none, &none, &none) &none &kp LEFT &kp DOWN &kp UP &kp RIGHT &none &none
+                  &none &none &none &none &none &none &kp LEFT &kp DOWN &kp UP &kp RIGHT &none &none
 
                   &none &none &none &none &none &none &kp HOME &kp PG_DN &kp PG_UP &kp END &kp BSPC &none
 
@@ -131,7 +131,7 @@
       bindings = <&none &none &none &none &none &none &none &none &none &none &none &none
 
                   // &none LHRM(&none, &none, &none, &none) &none U_MS_L U_MS_D U_MS_U U_MS_R &none &none
-                  &none LHRM(&none, &none, &none, &none) &none &kp LEFT &kp DOWN &kp UP &kp RIGHT &none &none
+                  &none &none &none &none &none &none &kp LEFT &kp DOWN &kp UP &kp RIGHT &none &none
 
                   &none &none &none &none &none &none &kp HOME &kp PG_DN &kp PG_UP &kp END &kp BSPC &none
 
@@ -150,7 +150,7 @@
       //                       ╰────────────────┴─────────────┴─────────────╯       ╰─────────────┴─────────────┴─────────────╯
       bindings = <&none &kp LBKT &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp RBKT &none &none &none &none &none &none
 
-                  &none &kp SEMI &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp EQUAL &none RHRM(&none, &none, &none, &none) &none
+                  &none &kp SEMI &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp EQUAL &none &none &none &none &none &none
 
                   &none &kp GRAVE &kp KP_N1 &kp KP_N2 &kp N3 &kp BSLH &none &none &none &none &none &none
 
@@ -169,7 +169,7 @@
       //                          ╰─────────────┴─────────────┴─────────────╯       ╰─────────────┴─────────────┴─────────────╯
       bindings = <&none &kp LBRC &kp AMPS &kp STAR &kp LPAR &kp RBRC &none &none &none &none &none &none
 
-                  &none &kp COLON &kp DOLLAR &kp PRCNT &kp CARET &kp PLUS &none RHRM(&none, &none, &none, &none) &none
+                  &none &kp COLON &kp DOLLAR &kp PRCNT &kp CARET &kp PLUS &none &none &none &none &none &none
 
                   &none &kp TILDE &kp EXCL &kp AT &kp HASH &kp BSLH &none &none &none &none &none &none
 
@@ -188,7 +188,7 @@
       //                       ╰────────────────┴─────────────┴─────────────╯       ╰─────────────┴─────────────┴─────────────╯
       bindings = <&none &kp F12 &kp F7 &kp F8 &kp F9 &kp PSCRN &none &none &none &none &none
 
-                  &none &kp F11 &kp F4 &kp F5 &kp F6 &none &none RHRM(&none, &none, &none, &none) &none
+                  &none &kp F11 &kp F4 &kp F5 &kp F6 &none &none &none &none &none &none &none
 
                   &none &kp F10 &kp F1 &kp F2 &kp F3 &none &none &none &none &none &none &none
 
