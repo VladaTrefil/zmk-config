@@ -20,9 +20,9 @@
 #define SYM 5
 #define FUNC 6
 
-&caps_word {
-  continue-list = <UNDERSCORE MINUS>;
-};
+// &caps_word {
+//   continue-list = <UNDERSCORE MINUS>;
+// };
 
 // #if defined(NICE_VIEW_SPI)
 // &nice_view_spi {
