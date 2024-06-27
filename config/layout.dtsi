@@ -46,11 +46,11 @@
       // ╰──────────┴──────────┼──────────┴─────┬────┴────────┬──┴──────────┤       ├──────────┴──┬────────┴────┬─────┴───────┬──┴──────────┴──────────╯
       //                       │  ESC           │ SPACE       │ TAB         │       │  ENTER      │  BCKSPC     │  DELETE     │
       //                       ╰────────────────┴─────────────┴─────────────╯       ╰─────────────┴─────────────┴─────────────╯
-      bindings = < &none &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &none
+      bindings = <&kp F &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &kp F
 
-                  &none &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SINGLE_QUOTE &none
+                  &kp F &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SINGLE_QUOTE &kp F
 
-                  &none &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp FSLH &none
+                  &kp F &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp FSLH &kp F
 
                   &lt MEDIA ESC &lt NAV SPACE &lt MOUSE TAB &lt NUM RET &lt SYM BSPC &lt FUNC DEL>;
     };
