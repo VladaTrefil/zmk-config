@@ -7,7 +7,7 @@
 #include "layout.h"
 
 #include "mouse.dtsi"
-// #include "shift_functions.dtsi"
+#include "shift_functions.dtsi"
 
 #define LHRM(k1, k2, k3, k4) &lhrm LGUI k1 &lhrm LALT k2 &lhrm LCTRL k3 &lhrm LSHIFT k4
 #define RHRM(k1, k2, k3, k4) &rhrm RGUI k4 &rhrm RALT k3 &rhrm RCTRL k2 &rhrm RSHIFT k1
@@ -36,25 +36,25 @@
     compatible = "zmk,keymap";
 
     behaviors {
-      rhrm: rhrm {
-        compatible = "zmk,behavior-hold-tap";
-        #binding-cells = <2>;
-        flavor = "tap-preferred";
-        tapping-term-ms = <200>;
-        quick-tap-ms = <200>;
-        require-prior-idle-ms = <125>;
-        bindings = <&kp>, <&kp>;
-      };
-
-      lhrm: lhrm {
-        compatible = "zmk,behavior-hold-tap";
-        #binding-cells = <2>;
-        flavor = "tap-preferred";
-        tapping-term-ms = <200>;
-        quick-tap-ms = <200>;
-        require-prior-idle-ms = <125>;
-        bindings = <&kp>, <&kp>;
-      };
+      // rhrm: rhrm {
+      //   compatible = "zmk,behavior-hold-tap";
+      //   #binding-cells = <2>;
+      //   flavor = "tap-preferred";
+      //   tapping-term-ms = <200>;
+      //   quick-tap-ms = <200>;
+      //   require-prior-idle-ms = <125>;
+      //   bindings = <&kp>, <&kp>;
+      // };
+      //
+      // lhrm: lhrm {
+      //   compatible = "zmk,behavior-hold-tap";
+      //   #binding-cells = <2>;
+      //   flavor = "tap-preferred";
+      //   tapping-term-ms = <200>;
+      //   quick-tap-ms = <200>;
+      //   require-prior-idle-ms = <125>;
+      //   bindings = <&kp>, <&kp>;
+      // };
     };
 
     base {
